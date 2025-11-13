@@ -1,11 +1,11 @@
 import React from 'react';
 
-function DashBoard() {
+function Profile() {
   return (
     <div>
-      DashBoard
+      Profile page
     </div>
   );
 }
 
-export default DashBoard;
+export default Profile;
