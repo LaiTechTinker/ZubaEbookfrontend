@@ -1,0 +1,115 @@
+.footer {
+  padding: 70px 5% 40px;
+  background: #faf7ff;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Background Glow */
+.footer-glow {
+  position: absolute;
+  bottom: -120px;
+  right: -100px;
+  width: 700px;
+  height: 700px;
+  background: radial-gradient(
+    circle at center,
+    rgba(165, 108, 255, 0.28),
+    rgba(255, 255, 255, 0)
+  );
+  filter: blur(90px);
+  z-index: 0;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 60px;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 2;
+}
+
+/* ==== BRAND SIDE ==== */
+
+.footer-brand {
+  max-width: 350px;
+}
+
+.footer-logo {
+  font-size: 28px;
+  font-weight: 800;
+  margin-bottom: 10px;
+  color: #7d3ef3;
+}
+
+.footer-brand p {
+  color: #666;
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.footer-socials a {
+  margin-right: 14px;
+  color: #555;
+  transition: 0.25s ease;
+}
+
+.footer-socials a:hover {
+  color: #7d3ef3;
+}
+
+/* ==== LINK COLUMNS ==== */
+
+.footer-links {
+  display: flex;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+.footer-col h4 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.footer-col a {
+  display: block;
+  color: #555;
+  margin-bottom: 10px;
+  text-decoration: none;
+  transition: 0.25s ease;
+  font-size: 15px;
+}
+
+.footer-col a:hover {
+  color: #7d3ef3;
+  padding-left: 4px;
+}
+
+/* ==== BOTTOM BAR ==== */
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid #ddd;
+  font-size: 14px;
+  color: #777;
+  position: relative;
+  z-index: 2;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+  }
+
+  .footer-links {
+    gap: 30px;
+  }
+}

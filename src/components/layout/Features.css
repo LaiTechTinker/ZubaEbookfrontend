@@ -1,0 +1,120 @@
+.testimonials {
+  padding: 90px 5%;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  /* flex: auto; */
+}
+
+/* Background gradient streak */
+.testimonials-bg {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 900px;
+  height: 900px;
+  background: radial-gradient(circle at center,
+    rgba(180, 120, 255, 0.18),
+    rgba(255, 255, 255, 0)
+  );
+  filter: blur(80px);
+  z-index: -1;
+}
+
+.testimonials-title {
+  font-size: 42px;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.testimonials-title span {
+  color: #7d3ef3;
+}
+
+.testimonials-sub {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 50px;
+}
+
+/* GRID */
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  gap: 28px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* CARD */
+.testimonial-card {
+  position: relative;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 18px;
+  padding: 35px 28px;
+  text-align: left;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.06);
+  backdrop-filter: blur(8px);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 45px rgba(0, 0, 0, 0.10);
+}
+
+/* Quote Badge */
+.quote-badge {
+  position: absolute;
+  top: -16px;
+  left: 18px;
+  background: #7d3ef3;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 12px;
+  font-size: 24px;
+  font-weight: 700;
+  box-shadow: 0 6px 18px rgba(125, 62, 243, 0.3);
+}
+
+/* Stars */
+.stars {
+  color: #f8c93b;
+  margin-bottom: 14px;
+}
+
+/* Text */
+.testimonial-text {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 25px;
+  line-height: 1.55;
+}
+
+/* User Info */
+.testimonial-user {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.testimonial-user img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.role {
+  color: #777;
+  font-size: 14px;
+  margin-top: 2px;
+}
+
+/* Responsive tweaks */
+@media (max-width: 600px) {
+  .testimonials-title {
+    font-size: 32px;
+  }
+}

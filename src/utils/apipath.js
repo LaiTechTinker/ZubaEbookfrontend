@@ -1,0 +1,23 @@
+export const API_PATH={
+    AUTH:{
+        REGISTER:"/api/auth/register",
+        LOGIN:"/api/auth/LOGIN",
+        GET_PROFILE:"/api/auth/profile",
+        UPDATE_PROFILE:"/api/auth/updateprofile"
+    },
+    BOOKS:{
+        CREATE_BOOKS:"/api/book",
+        GET_BOOKS:"/api/book",
+        GET_BOOK_ID:"/api/book",
+        UPDATE_BOOK:"/api/book",
+        UPDATE_BOOK_COVER:"/api/book/cover"
+    },
+    AI:{
+        GENERATE_OUTLINE:"/api/ai/generate-outline",
+        GENERATE_CONTENT:"/api/ai/generate-chapter-content"
+    },
+    EXPORT:{
+        PDF:"/api/export",
+        DOC:"/api/export"
+    }
+}
