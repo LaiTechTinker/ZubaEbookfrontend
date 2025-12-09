@@ -1,7 +1,7 @@
 export const API_PATH={
     AUTH:{
         REGISTER:"/api/auth/register",
-        LOGIN:"/api/auth/LOGIN",
+        LOGIN:"/api/auth/Login",
         GET_PROFILE:"/api/auth/profile",
         UPDATE_PROFILE:"/api/auth/updateprofile"
     },

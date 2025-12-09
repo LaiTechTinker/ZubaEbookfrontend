@@ -1,5 +1,5 @@
 import React from 'react';
-import {Routes,Route} from "react-router-dom"
+import { Routes, Route } from "react-router-dom";
 
 import './App.css';
 import LoginPage from './pages/LoginPage';
@@ -13,20 +13,19 @@ import Profile from './pages/Profile';
 
 function App() {
   return (
-    <div >
-<Routes>
-  {/* public Routes */}
-  <Route path="/" element={<LandingPage/>}/>
-  <Route path="/SignUp" element={<SignupPage/>}/>
-  <Route path="/Login" element={<LoginPage/>}/> 
-</Routes>
-{/* Protected Routes */}
-<Routes>
-  <Route path="/dashboard" element={<Protected><DashBoard/></Protected>}/>
-  <Route path="/editor/:bookId" element={<Protected><EditorPage/></Protected>}/>
-  <Route path="/view-book/:bookId" element={<Protected><ViewBookPage/></Protected>}/>
-  <Route path="/profile" element={<Protected><Profile/></Protected>}/>
-</Routes>
+    <div>
+      <Routes>
+        {/* Public Routes */}
+        <Route path="/" element={<LandingPage />} />
+        <Route path="/signup" element={<SignupPage />} />
+        <Route path="/login" element={<LoginPage />} />
+
+        {/* Protected Routes */}
+        <Route path="/dashboard" element={<Protected><DashBoard /></Protected>} />
+        <Route path="/editor/:bookId" element={<Protected><EditorPage /></Protected>} />
+        <Route path="/view-book/:bookId" element={<Protected><ViewBookPage /></Protected>} />
+        <Route path="/profile" element={<Protected><Profile /></Protected>} />
+      </Routes>
     </div>
   );
 }

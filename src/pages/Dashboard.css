@@ -1,0 +1,13 @@
+ .Main-con{
+  width: 100%;
+  min-height: 100vh;
+  height: auto;
+       
+  overflow-y: visible;           /* scroll vertically inside */
+  overflow-x: hidden;
+  display: block;
+  /* scroll-behavior: smooth; */
+  box-sizing: border-box;
+  /* padding-bottom: 50px; */
+   
+ }

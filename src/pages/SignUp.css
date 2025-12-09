@@ -1,0 +1,138 @@
+/* Global styling */
+body {
+  margin: 0;
+  padding: 0;
+  background: white;
+  font-family: Arial, sans-serif;
+}
+
+/* Center container */
+.login-wrapper {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+}
+
+/* Signup box (same style as login box) */
+.login-box {
+  width: 100%;
+  max-width: 380px;
+  background: white;
+  padding: 32px;
+  border-radius: 16px;
+  border: 1.5px solid rgb(108, 108, 189);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+/* Logo / Title */
+.app-logo {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 28px;
+  color: rgb(108, 108, 189);
+}
+
+/* Labels */
+.login-box label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 6px;
+  text-align: left;
+}
+
+/* Inputs */
+.login-box input {
+  width: 100%;
+  padding: 10px;
+  border: 1.5px solid rgb(108, 108, 189);
+  border-radius: 8px;
+  outline: none;
+  font-size: 14px;
+}
+
+.login-box input:focus {
+  border-color: rgb(88, 88, 169);
+}
+
+/* Error message */
+.error-text {
+  color: red;
+  font-size: 13px;
+  margin: 4px 0 10px 0;
+  text-align: left;
+}
+
+/* Password wrapper */
+.password-wrapper {
+  position: relative;
+}
+
+.toggle-password {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 13px;
+  color: rgb(108, 108, 189);
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* Button */
+.login-btn {
+  width: 100%;
+  padding: 12px;
+  margin-top: 12px;
+  border: none;
+  border-radius: 8px;
+  background: rgb(108, 108, 189);
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.login-btn:disabled {
+  opacity: 0.8;
+  cursor: not-allowed;
+}
+
+/* Spinner */
+.spinner {
+  width: 18px;
+  height: 18px;
+  border: 3px solid white;
+  border-top: 3px solid transparent;
+  border-radius: 50%;
+  animation: spin 0.7s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Signup link */
+.signup-link {
+  margin-top: 18px;
+  font-size: 14px;
+}
+
+.signup-link a {
+  color: rgb(108, 108, 189);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.signup-link a:hover {
+  text-decoration: underline;
+}

@@ -35,6 +35,8 @@ const storedUser = localStorage.getItem("user");
     }catch(e){
   setLoading(false);
   console.log("auth failed:",e)
+    }finally{
+      setLoading(false)
     }
   }
 

@@ -1,0 +1,109 @@
+.books-section {
+  width: 100%;
+  padding: 20px 30px;
+  box-sizing: border-box;
+}
+
+/* Header */
+.books-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.books-header h2 {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.create-btn {
+  background: #a675ff;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.create-btn i {
+  font-size: 14px;
+}
+
+/* Grid Layout */
+.books-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 25px;
+}
+
+/* Book Card */
+.book-card {
+  width: 100%;
+  background: #fff;
+  border-radius: 14px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.08);
+  cursor: pointer;
+  transition: 0.15s ease-in-out;
+}
+
+.book-card:hover {
+  transform: translateY(-3px);
+}
+
+/* Book Image */
+.book-image {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+/* Title + author */
+.book-info {
+  padding: 12px;
+}
+
+.book-info h4 {
+  font-size: 16px;
+  margin-bottom: 4px;
+}
+
+.book-info p {
+  font-size: 13px;
+  color: #666;
+}
+
+/* Hover Icons */
+.card-icons {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  opacity: 0;
+  gap: 10px;
+  transition: 0.2s ease-in-out;
+}
+
+.book-card:hover .card-icons {
+  opacity: 1;
+}
+
+.card-icons i {
+  background: white;
+  padding: 8px;
+  border-radius: 50%;
+  font-size: 14px;
+  color: #444;
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+
+.card-icons .delete-icon {
+  color: red;
+}

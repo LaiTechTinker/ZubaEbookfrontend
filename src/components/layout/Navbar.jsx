@@ -3,7 +3,9 @@ import './Navbar.css'
 import {useAuth} from '../../context/AuthContext'
 import ProfileDropDown from './ProfileDropDown';
 import {Menu,X,BookOpen,LogOut} from "lucide-react"
+import { useNavigate } from 'react-router-dom';
 function Navbar() {
+  const navigator=useNavigate()
     const {user,Logout,isAuthenticated}=useAuth()
     const [isOpen,setIsOpen]=useState(false)
     const [ProfileDropDownOpen,setProfileDropDownOpen]=useState(false)
@@ -31,8 +33,8 @@ return ()=>document.removeEventListener("click",handleClickOutside)
           <li><a href="#About">About</a></li>
           <li><a href="#Feature">Features</a></li>
         </ul>
-         <button className="Login-btn">Login</button>
-        <button className="download-btn">Register</button>
+         <button className="Login-btn"  onClick={()=>navigator("/Login")}>Login</button>
+        <button className="download-btn" onClick={()=>navigator("/SignUp")}>Register</button>
       </nav>
       {/* auth button & profile */}
     
